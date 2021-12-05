@@ -1000,6 +1000,22 @@ li.timeline-list-education.not-in-view div.div-education {
 
 @media (max-width: 550px) {
 
+    li.timeline-list-education::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 50px;
+        height: 50px;
+        background: url(images/education/education_img.png) center no-repeat rgb(156, 252, 255);
+        background-size: cover;
+        background-clip: content-box;
+        border: 0.4rem dotted #020b8d;
+        box-shadow: 0px 3px 8px 8px rgb(149, 234, 255);
+        border-radius: 50%;
+    }
+
     li.timeline-list-education div.div-education {
         width: 220px;
     }
@@ -1761,6 +1777,21 @@ li.timeline-list-experience.not-in-view div.div-experience {
 
 
 @media (max-width: 550px) {
+    li.timeline-list-experience::after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: 45px;
+        height: 45px;
+        background: url(images/experience/briefcase.png) center no-repeat rgb(100, 245, 255);
+        background-size: cover;
+        background-clip: content-box;
+        border: 0.5rem double #0c115a;
+        box-shadow: 0px 3px 8px 8px rgb(149, 234, 255);
+        border-radius: 50%;
+    }
 
     li.timeline-list-experience div.div-experience {
         width: 220px;
@@ -4054,13 +4085,136 @@ li {
 @media(max-width:550px) {
     html {
         font-size: 40%;
-
     }
 
+    .logo-pic,
+    .content {
+        color: #fafafa;
+    }
+
+       /* End of mobile / tablet navigation */
+
+    .nav {
+        width: 100%;
+        background-color: #10c9e2;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        z-index: 200;
+    }
+
+    .logo-pic,
+    #hamburger {
+        margin: 4%;
+    }
+
+    #hamburger {
+
+        opacity: 0.5;
+        cursor: pointer;
+        transition: opacity 0.25s linear;
+        width: clamp(1.6rem, 2vw + 1.5rem, 10rem);
+        height: clamp(3rem, 1.4vw + 1.7rem, 5rem);
+        display: flex;
+        align-items: center;
+    }
+
+    #hamburger:hover {
+        opacity: 1;
+    }
+
+    #hamburger div,
+    #hamburger div:after,
+    #hamburger div:before {
+        background-color: #10126e;
+        border-radius: 10px;
+        width: clamp(1.6rem, 2vw + 1.1rem, 6rem);
+        height: clamp(0.2rem, 0.3vw + 0.1rem, 0.8rem);
+        transition: all 0.15s linear;
+    }
+
+    #hamburger div:before,
+    #hamburger div:after {
+        content: "";
+        position: absolute;
+    }
+
+    #hamburger div:before {
+        transform: translateY(-200%);
+    }
+
+    #hamburger div:after {
+        transform: translateY(200%);
+    }
+
+    #hamburger.open div {
+        background: transparent;
+    }
+
+    #hamburger.open div:before {
+        transform: rotate(45deg);
+    }
+
+    #hamburger.open div:after {
+        transform: rotate(-45deg);
+    }
+
+    #overlay {
+        position: fixed;
+        width: 100%;
+        min-height: 70%;
+        background-color: #10c9e2;
+        z-index: 200;
+        transform: translateY(-100%);
+        transition: all 0.5s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #overlay.menu {
+        transform: translateY(0%);
+    }
+
+    #overlay a {
+        text-decoration: none;
+        color: #1512a8;
+        font-weight: 700;
+        font-size: clamp(1rem, 4.1vw + 0.2rem, 2rem);
+        margin: 2%;
+        opacity: 0.5;
+        transition: opacity 0.2s linear;
+    }
+
+    #overlay a:hover {
+        opacity: 1;
+    }
+
+    /* End of mobile / tablet navigation */
+
+    .main-circle-img {
+        width: 550px;
+        height: 350px;
+    }
+
+    .main-circle {
+        width: 32rem;
+        height: 32rem;
+    }
+    
+    .main-circle:hover {
+        width: 37rem;
+        height: 37rem;
+    }
+    
+
     .logo {
-        font-size: 1.8rem;
+        font-size: 2rem;
         top: 15rem;
-        left: 55%;
+        left: 60%;
         transform: translateX(-50%);
     }
 
@@ -4076,7 +4230,7 @@ li {
     /* Featured Text */
 
     .featured-text {
-        font-size: 2.5rem;
+        font-size: 2.4rem;
         color: #ffffff;
         text-transform: uppercase;
         width: 0;
@@ -4104,6 +4258,7 @@ li {
 
     .section-1 {
         margin-bottom: -10rem;
+        height: 100vh;
     }
 
     .section-2 {
@@ -4123,7 +4278,7 @@ li {
         padding: 5rem 0;
         margin-top: 0rem;
         position: relative;
-        margin-bottom: 110rem;
+        margin-bottom: 113rem;
     }
 
 
@@ -4138,12 +4293,77 @@ li {
         transform: translateX(-50%);
     }
 
+
+    .section-4 {
+        position: relative;
+        padding: 20rem 10rem 10rem 12rem;
+        width: 100%;
+        height: 160vh;
+        margin-bottom: 10rem;
+    }
+
+
+    .skill img {
+        width: 100%;
+        padding: 0 1rem 0 1rem;
+        width: 7rem;
+        height: 5rem;
+        margin-top: auto;
+        transition: all 0.5s ease-in;
+    }
+
+    .skill {
+        margin: 1.2rem;
+    }
+
+    .skill-margin {
+        margin: 4rem;
+        margin-right: 110rem;
+    }
+
+    .specific-skill-heading {
+        font-size: 2.2rem;
+        font-weight: 800;
+        text-shadow: #0a5f24;
+        color: #95f140;
+        /* text-transform: uppercase; */
+        font-family: "Stick No Bills", sans-serif;
+        position: absolute;
+        margin-right: 11rem;
+        letter-spacing: 0.2rem;
+        line-height: normal;
+        text-align: justify;
+    }
+
+    .skill-text {
+        color: #00eaff;
+        left: 9rem;
+        margin-top: auto;
+        font-weight: 700;
+        font-size: 1.5rem;
+        display: inline-flex;
+        font-family: "Stick No Bills", sans-serif;
+        letter-spacing: 0.2rem;
+    }
+
+    .skill-photo {
+        border-radius: .25rem;
+        margin: 2rem 2rem;
+        opacity: 0;
+        transform: translateY(4rem) rotateZ(-5deg);
+        transition: transform 4s .25s cubic-bezier(0, 1, .3, 1), opacity .3s .25s ease-out;
+        max-width: 600px;
+        width: 90%;
+        will-change: transform, opacity;
+    }
+
+
     .section-8 {
         width: 100%;
         height: 100%;
         padding: 1rem 0;
         position: relative;
-        margin-bottom: 40rem;
+        margin-bottom: 50rem;
     }
 
     #project-links {
@@ -4200,6 +4420,90 @@ li {
         background-color: #072e83;
         background-clip: content-box;
     }
+    .section-9 {
+        width: 100%;
+        position: relative;
+        /* margin-bottom: 20rem; */
+        margin-top: 50rem;
+        margin-bottom: 10rem;
+    }
+
+    .services-wrapper {
+        width: 100%;
+        flex-direction: column;
+        margin-left: 2rem;
+    }
+
+    .service-btn {
+        width: 100%;
+        position: relative;
+        display: block;
+
+        height: 8rem;
+    }
+
+    .service {
+        width: 75%;
+        margin: 2rem 0;
+        border-bottom: 0.5rem solid #0a1a74;
+        background: rgb(59, 105, 255);
+        box-shadow: 0px 4px 8px 8px rgb(149, 234, 255);
+        padding: 2rem 2rem 2rem;
+        border-radius: 2rem;
+    }
+
+    .service-btn span {
+        font-family: "Roboto", sans-serif;
+        font-size: 2.3rem;
+        font-style: italic;
+        font-weight: bold;
+        color: rgb(133, 241, 255);
+        position: absolute;
+        right: 0;
+        pointer-events: none;
+        transition: right 0.5s;
+    }
+
+    .service-text {
+        font-size: 1.8rem;
+        color: #ffffff;
+        letter-spacing: 0.1rem;
+        height: 0;
+        visibility: hidden;
+        opacity: 0;
+        transition: all 0.2s;
+    }
+
+
+    .skill.resume img {
+        width: 100%;
+        padding: 0 0.5rem 0 0.5rem;
+        width: 7rem;
+        height: 5rem;
+        margin-top: 0;
+        transition: all 0.5s ease-in;
+    }
+
+    .specific-skill-heading.resume {
+        font-size: 2rem;
+        font-weight: 800;
+        text-shadow: #0a5f24;
+        color: #95f140;
+        /* text-transform: uppercase; */
+        font-family: "Stick No Bills", sans-serif;
+        position: absolute;
+        margin-right: 10rem;
+        letter-spacing: 0.2rem;
+        line-height: normal;
+        text-align: justify;
+    }
+
+    .skill-margin.resume {
+        margin: 7.3rem;
+        margin-right: 150rem;
+    }
+
+
 
 
     .about-me-text {
@@ -4214,38 +4518,43 @@ li {
         width: 100%;
         position: relative;
         height: 70vh;
-        margin-top: 100rem;
-        margin-bottom: 0rem;
+        margin-top: 150rem;
+        margin-bottom: 20rem;
     }
+
 
     .box {
-        width: 320px;
-        height: 240px;
+        width: 220px;
+        height: 330px;
     }
 
     h2.box-heading {
-        padding: 0.3rem;
-        font-size: 15px;
-    }
-
-    p.mentor-para {
-        font-size: 1.7rem;
-        padding: 0.3rem;
-    }
-
-
-    h2.box-heading {
+        /* background-color: rgba(255, 255, 255, 0.705); */
+        color: rgb(134, 237, 255);
+        text-shadow: rgb(29, 215, 240);
+        text-align: justify;
         padding: 0.2rem;
-        font-size: 12px;
+        font-size: 14px;
     }
-
+    
+    p.mentor-para {
+        /* background-color: rgba(226, 226, 226, 0.719); */
+        color: rgb(255, 255, 255);
+        text-shadow: #2bdfff;
+        font-weight: 500;
+        padding: 0.2rem;
+        margin-top: 2rem;
+        text-align: justify;
+        letter-spacing: .01rem;
+        line-height: 1;
+        font-size: 13px;
+    }
     .mentor-list {
         /* background-color: rgba(226, 226, 226, 0.719); */
         color: rgb(255, 255, 255);
         text-shadow: #2bdfff;
         font-weight: 500;
         padding-left: 4rem;
-        padding: 0.5;
         margin-top: 1rem;
         text-align: justify;
         letter-spacing: .01rem;
@@ -4255,20 +4564,20 @@ li {
         /* list-style: circle; */
         list-style-type: disc;
     }
-
     .section-13 {
         width: 100%;
         height: 100%;
         /* padding: 10rem 10rem 10rem 10rem; */
         position: relative;
-        margin-bottom: 35rem;
-        margin-top: 140rem;
+        margin-bottom: 20rem;
+        margin-top: 160rem;
         /* flex-direction: row; */
     }
 
+
     .flip-box {
-        width: 300px;
-        height: 200px;
+        width: 260px;
+        height: 160px;
         margin: 3rem;
     }
 
@@ -4283,15 +4592,24 @@ li {
         text-align: justify;
         letter-spacing: .01rem;
         line-height: 1.2;
-        font-size: 2rem;
+        font-size: 1.6rem;
+    }
+    .slideshow {
+        margin-top: 12rem;
+        margin-bottom: 15rem;
+        padding: 0 1.4rem;
     }
 
     .slideshow-link img {
         width: 100%;
-        padding: 0 0.1rem 0 0.1rem;
-        width: 8rem;
-        height: 7.2rem;
+        padding: 0 0.05rem 0 0.05rem;
+        width: 5.6rem;
+        height: 4.8rem;
     }
+
+
+   
+ 
 }
 
 @media(max-width: 400px) {
