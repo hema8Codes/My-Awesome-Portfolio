@@ -2851,6 +2851,269 @@ li {
 
 }
 
+@media (max-width: 1590px) {
+    html {
+        font-size: 50%;
+        margin: 0;
+        padding: 0;
+    }
+
+    .navbar-link {
+        margin: 0 0.8rem;
+        font-size: 1.8rem;
+
+    }
+
+    .navbar {
+        position: fixed;
+        top: 3rem;
+        width: 100%;
+        display: flex;
+        justify-content: flex-end;
+        padding-right: 6rem;
+        z-index: 100;
+        transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
+
+    }
+
+    .main-circle {
+        width: 45rem;
+        height: 45rem;
+    }
+
+    .main-circle:hover {
+        width: 55rem;
+        height: 55rem;
+    }
+
+    .progress-bar {
+        right: -1rem;
+        bottom: 3rem;
+        width: 10rem;
+        height: 10rem;
+    }
+
+
+    .progress-bar-circle {
+        width: 9.2rem;
+        height: 9.2rem;
+
+    }
+
+    .about-me-text span {
+        font-size: 4rem;
+    }
+
+
+    /* Featured Text */
+
+    .featured-text {
+        font-size: 2.5rem;
+        color: #ffffff;
+        text-transform: uppercase;
+        width: 0;
+        word-wrap: break-word;
+        line-height: 2.8;
+        position: sticky;
+        top: 0;
+    }
+
+    .featured-text-1 {
+        margin: 0 auto 0 10rem;
+    }
+
+    .featured-text-2 {
+        margin: 0 10rem 0 auto;
+    }
+
+    .logo {
+        font-size: 2.4rem;
+    }
+
+    /* End of Featured Text */
+    .section-1 .main-btn {
+        left: 50%;
+        bottom: 2rem;
+        transform: translateX(-50%);
+    }
+
+    .section-3 {
+        width: 100%;
+        height: 100%;
+        padding: 10rem 0;
+        margin-top: 5rem;
+        position: relative;
+        margin-bottom: 80rem;
+    }
+
+    .section-4 {
+        position: relative;
+        padding: 20rem 15rem 10rem 20rem;
+        width: 100%;
+        height: 160vh;
+    }
+
+    .skill img {
+        width: 100%;
+        padding: 0 1rem 0 1rem;
+        width: 11rem;
+        height: 9rem;
+        margin-top: auto;
+        transition: all 0.5s ease-in;
+    }
+
+    .skill {
+        margin: 1rem;
+    }
+
+    .skill-margin {
+        margin: 5rem;
+        margin-right: 150rem;
+    }
+
+    .specific-skill-heading {
+        font-size: 2.4rem;
+        font-weight: 800;
+        text-shadow: #0a5f24;
+        color: #95f140;
+        /* text-transform: uppercase; */
+        font-family: "Stick No Bills", sans-serif;
+        position: absolute;
+        margin-right: 12rem;
+        letter-spacing: 0.2rem;
+        line-height: normal;
+        text-align: justify;
+    }
+
+    .section-8 {
+        width: 100%;
+        height: 100%;
+        padding: 10rem 0;
+        position: relative;
+        margin-bottom: 20rem;
+    }
+
+    /* Projects */
+
+    .projects {
+        flex-wrap: wrap;
+        margin-left: 5rem;
+        padding-bottom: 15rem;
+    }
+
+    .project {
+        width: 40rem;
+        height: 45rem;
+        overflow: hidden;
+        margin: 4rem;
+        background-color: rgb(27, 6, 144);
+        display: flex;
+        justify-content: center;
+        position: relative;
+        border: 0.4rem dotted rgb(147, 255, 250);
+        border-radius: 2rem;
+        cursor: pointer;
+        perspective: 20rem;
+        vertical-align: text-bottom;
+        transition: opacity 0.5s;
+    }
+
+    .project-img {
+        padding: 7rem 11rem;
+    }
+
+    .project-hide-btn {
+        right: 2rem;
+    }
+
+    .section-5 {
+        position: relative;
+        height: 100vh;
+        margin-top: 40rem;
+        margin-bottom: 50rem;
+        width: 100%;
+    }
+
+    .section-9 {
+        width: 100%;
+        position: relative;
+        /* margin-bottom: 20rem; */
+        margin-top: 35rem;
+        padding: 5rem;
+    }
+
+    .service-btn {
+        height: 9rem;
+    }
+
+    .service-btn span {
+        font-size: 4.7rem;
+    }
+
+    .service-text {
+        font-size: 2.5rem;
+        text-align: left;
+    }
+
+    .section-11 {
+        width: 100%;
+        position: relative;
+        height: 70vh;
+        margin-top: 75rem;
+        margin-bottom: 0rem;
+    }
+
+    .mentor-qoute {
+        margin: 10px;
+        font-family: "Dancing Script", sans-serif;
+        font-size: 4rem;
+        padding: 4rem;
+        font-weight: 400;
+        color: #ffffff;
+    }
+
+    .box {
+        padding: 1rem;
+        width: 800px;
+        height: 250px;
+        margin: 20px;
+    }
+
+    .section-13 {
+        width: 100%;
+        height: 100%;
+        /* padding: 10rem 10rem 10rem 10rem; */
+        position: relative;
+        margin-bottom: 0rem;
+        margin-top: 90rem;
+        /* flex-direction: row; */
+    }
+
+
+    .flip-box {
+        width: 380px;
+        height: 250px;
+    }
+
+    .achievement-text {
+        font-size: 15px;
+    }
+
+    .slideshow {
+        margin: 5rem 0;
+    }
+
+    .section-12 {
+        position: relative;
+        height: 100vh;
+        padding: 15rem 10rem 4rem 10rem;
+        margin-top: 0rem;
+        margin-bottom: 15rem;
+        flex-direction: column;
+    }
+    
+}
+
 
 @media (max-width: 1500px) {
     html {
