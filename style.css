@@ -2790,7 +2790,7 @@ li {
     }
 
     .about-me-text span {
-        font-size: 6rem;
+        font-size: 4rem;
     }
 
 
@@ -2902,7 +2902,7 @@ li {
     }
 
     .about-me-text span {
-        font-size: 4.2rem;
+        font-size: 4rem;
     }
 
 
@@ -3188,7 +3188,7 @@ li {
     }
 
     .about-me-text span {
-        font-size: 3rem;
+        font-size: 4rem;
     }
 
     /* End of Featured Text */
@@ -3343,6 +3343,10 @@ li {
         line-height: 2;
         position: sticky;
         top: 0;
+    }
+
+    .about-me-text span{
+        font-size: 3.2rem;
     }
 
     .featured-text-1 {
