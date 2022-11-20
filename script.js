@@ -6,11 +6,11 @@ let mouseCircleBool = true;
 
 
 const mouseCircleFn = (x, y) => {
-    mouseCircleBool && (mouseCircle.style.cssText = `top:${y}px;left:${x}px;opacity:1`);
+        mouseCircleBool && (mouseCircle.style.cssText = `top:${y}px;left:${x}px;opacity:1`);
 
-    mouseDot.style.cssText = `top:${y}px;left:${x}px;opacity:1`;
-}
-// End of Mouse Circle
+        mouseDot.style.cssText = `top:${y}px;left:${x}px;opacity:1`;
+    }
+    // End of Mouse Circle
 
 // Animated Circles
 const circles = document.querySelectorAll(".circle");
@@ -23,36 +23,36 @@ let mz = 10;
 
 const animateCircles = (e, x, y) => {
 
-    if (x < mX) {
-        circles.forEach(circle => {
-            circle.style.left = `${cz}px`;
-        });
-        mainImg.style.left = `${mz}px`;
-        // console.log("moved to left");
-    } else if (x > mX) {
-        circles.forEach(circle => {
-            circle.style.left = `-${cz}px`;
-        });
-        mainImg.style.left = `-${mz}px`;
-    }
+        if (x < mX) {
+            circles.forEach(circle => {
+                circle.style.left = `${cz}px`;
+            });
+            mainImg.style.left = `${mz}px`;
+            // console.log("moved to left");
+        } else if (x > mX) {
+            circles.forEach(circle => {
+                circle.style.left = `-${cz}px`;
+            });
+            mainImg.style.left = `-${mz}px`;
+        }
 
-    if (y < mY) {
-        circles.forEach(circle => {
-            circle.style.top = `${cz}px`;
-        });
-        mainImg.style.top = `${mz}px`;
-        // console.log("move upwards");
-    } else if (y > mY) {
-        circles.forEach(circle => {
-            circle.style.top = `-${cz}px`;
-        });
-        mainImg.style.top = `-${mz}px`;
-    }
+        if (y < mY) {
+            circles.forEach(circle => {
+                circle.style.top = `${cz}px`;
+            });
+            mainImg.style.top = `${mz}px`;
+            // console.log("move upwards");
+        } else if (y > mY) {
+            circles.forEach(circle => {
+                circle.style.top = `-${cz}px`;
+            });
+            mainImg.style.top = `-${mz}px`;
+        }
 
-    mX = e.clientX;
-    mY = e.clientY;
-}
-// End of Animated Circles
+        mX = e.clientX;
+        mY = e.clientY;
+    }
+    // End of Animated Circles
 
 let hoveredElPosition = [];
 
@@ -95,7 +95,7 @@ const mouseCircleTransform = (hoveredEl) => {
         };
 
         document.onscroll = () => {
-            if(!mouseCircleBool){
+            if (!mouseCircleBool) {
                 mouseCircle.style.top = `${hoveredEl.getBoundingClientRect().top}px`;
             }
         };
@@ -458,15 +458,18 @@ setInterval(() => {
 
     firstIcon.classList.add("faded-out");
 
-    const fourthIcon = SlideShow.children[4];
-    const fifthIcon = SlideShow.children[5];
-    const sixthIcon = SlideShow.children[6];
+    const SecondIcon = SlideShow.children[2];
+    const ThirdIcon = SlideShow.children[3];
+    const FourthIcon = SlideShow.children[4];
 
-    fourthIcon.classList.add("light");
-    fifthIcon.classList.add("light");
+    SecondIcon.classList.add("light");
+    ThirdIcon.classList.add("light");
+    FourthIcon.classList.add("light");
 
-    fourthIcon.previousElementSibling.classList.remove("light");
-    fifthIcon.nextElementSibling.classList.add("light");
+    SecondIcon.previousElementSibling.classList.remove("light");
+    ThirdIcon.nextElementSibling.classList.add("light");
+    FourthIcon.nextElementSibling.classList.add("light");
+
 
 
     setTimeout(() => {
@@ -489,12 +492,12 @@ setInterval(() => {
 // Detect request animation frame
 var scroll = window.requestAnimationFrame ||
     // IE Fallback
-    function (callback) { window.setTimeout(callback, 1000 / 60) };
+    function(callback) { window.setTimeout(callback, 1000 / 60) };
 var elementsToShow = document.querySelectorAll('.show-on-scroll');
 
 function loop() {
 
-    Array.prototype.forEach.call(elementsToShow, function (element) {
+    Array.prototype.forEach.call(elementsToShow, function(element) {
         if (isElementInViewport(element)) {
             element.classList.add('is-visible');
         } else {
@@ -516,12 +519,10 @@ function isElementInViewport(el) {
     }
     var rect = el.getBoundingClientRect();
     return (
-        (rect.top <= 0
-            && rect.bottom >= 0)
-        ||
+        (rect.top <= 0 &&
+            rect.bottom >= 0) ||
         (rect.bottom >= (window.innerHeight || document.documentElement.clientHeight) &&
-            rect.top <= (window.innerHeight || document.documentElement.clientHeight))
-        ||
+            rect.top <= (window.innerHeight || document.documentElement.clientHeight)) ||
         (rect.top >= 0 &&
             rect.bottom <= (window.innerHeight || document.documentElement.clientHeight))
     );
@@ -697,19 +698,18 @@ menuIcon.addEventListener("click", () => {
     const hamburger = document.getElementById("hamburger");
     const menu = document.getElementById("overlay");
     let open = false;
-  
-    const change = () => {
-      if (!open) {
-        hamburger.classList.add("open");
-        menu.classList.add("menu");
-      } else {
-        hamburger.classList.remove("open");
-        menu.classList.remove("menu");
-      }
-      open = !open;
-    };
-  
-    hamburger.addEventListener("click", change);
-  })();
-// End of Mobile Navigation
 
+    const change = () => {
+        if (!open) {
+            hamburger.classList.add("open");
+            menu.classList.add("menu");
+        } else {
+            hamburger.classList.remove("open");
+            menu.classList.remove("menu");
+        }
+        open = !open;
+    };
+
+    hamburger.addEventListener("click", change);
+})();
+// End of Mobile Navigation
