@@ -2708,7 +2708,7 @@ li {
         padding: 5rem 0;
         margin-top: 0rem;
         position: relative;
-        margin-bottom: 50rem;
+        margin-bottom: 70rem;
     }
     .section-8 {
         width: 100%;
@@ -2723,23 +2723,28 @@ li {
     .section-11 {
         width: 100%;
         position: relative;
-        height: 70vh;
-        margin-top: 10rem;
+        height: 90vh;
+        margin-top: 40rem;
     }
     .section-13 {
         width: 100%;
         height: 100vh;
-        /* padding: 10rem 10rem 10rem 10rem; */
         position: relative;
         margin-bottom: 0rem;
-        margin-top: 0rem;
-        /* flex-direction: row; */
+        margin-top: 50rem;
     }
     .service-btn span {
         font-size: 5rem;
     }
     .service-text {
         font-size: 2.7rem;
+    }
+    .slideshow {
+        display: flex;
+        width: 50rem;
+        margin-top: 5rem;
+        margin-bottom: 0rem;
+        padding: 0 1rem;
     }
 }
 
@@ -2914,9 +2919,9 @@ li {
     .section-11 {
         width: 100%;
         position: relative;
-        height: 70vh;
-        margin-top: 75rem;
-        margin-bottom: 0rem;
+        height: 100vh;
+        margin-top: 50rem;
+        margin-bottom: 30rem;
     }
     .mentor-qoute {
         margin: 10px;
@@ -2937,8 +2942,8 @@ li {
         height: 100vh;
         /* padding: 10rem 10rem 10rem 10rem; */
         position: relative;
-        margin-bottom: 0rem;
-        margin-top: 0rem;
+        margin-bottom: 20rem;
+        margin-top: 50rem;
         /* flex-direction: row; */
     }
     .flip-box {
@@ -3150,6 +3155,13 @@ li {
         height: 250px;
         margin: 20px;
     }
+    .section-11 {
+        width: 100%;
+        position: relative;
+        height: 100vh;
+        margin-top: 75rem;
+        margin-bottom: 30rem;
+    }
     .section-13 {
         width: 100%;
         height: 100vh;
@@ -3180,12 +3192,12 @@ li {
         display: none;
     }
     .main-circle {
-        width: 35rem;
-        height: 35rem;
+        width: 45rem;
+        height: 45rem;
     }
     .main-circle:hover {
-        width: 40rem;
-        height: 40rem;
+        width: 47rem;
+        height: 47rem;
     }
     .navbar {
         position: relative center;
@@ -3198,11 +3210,11 @@ li {
         transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
     }
     .navbar-link {
-        font-size: 1.4rem;
-        margin: 0 0.7rem;
+        font-size: 1.7rem;
+        margin: 0 0.79rem;
     }
     .logo {
-        font-size: 1.7rem;
+        font-size: 2rem;
         top: 8rem;
         left: 55%;
         transform: translateX(-50%);
@@ -3210,7 +3222,7 @@ li {
     .logo-hp {
         position: absolute;
         top: 5.9rem;
-        left: 45%;
+        left: 47%;
         transform: translateX(-50%);
         height: 5rem;
         width: 5rem;
@@ -3222,7 +3234,7 @@ li {
     }
     /* Featured Text */
     .featured-text {
-        font-size: 1.8rem;
+        font-size: 2rem;
         color: #ffffff;
         text-transform: uppercase;
         width: 0;
@@ -3321,7 +3333,7 @@ li {
         width: 100%;
         position: relative;
         height: 100vh;
-        margin-top: 75rem;
+        margin-top: 60rem;
         margin-bottom: 55rem;
     }
     .box {
@@ -3331,10 +3343,10 @@ li {
     .section-13 {
         width: 100%;
         height: 100vh;
-        /* padding: 10rem 10rem 10rem 10rem; */
+        padding: 10rem 10rem 10rem 10rem;
         position: relative;
         margin-bottom: 20rem;
-        margin-top: 90rem;
+        margin-top: 80rem;
         /* flex-direction: row; */
     }
     .flip-box {
@@ -3436,13 +3448,16 @@ li {
     .slideshow {
         margin: 5rem 0;
     }
+    .section-11 {
+        margin-bottom: 60rem;
+    }
     .section-13 {
         width: 100%;
         height: 100%;
         /* padding: 10rem 10rem 10rem 10rem; */
         position: relative;
-        margin-bottom: 20rem;
-        margin-top: 90rem;
+        margin-bottom: 60rem;
+        margin-top: 100rem;
         /* flex-direction: row; */
     }
 }
@@ -3921,7 +3936,7 @@ li {
     }
     .section-11 {
         margin-top: 90rem;
-        margin-bottom: 170rem;
+        margin-bottom: 0rem;
     }
     .box {
         width: 420px;
@@ -4080,16 +4095,16 @@ li {
     }
     /* End of mobile / tablet navigation */
     .main-circle-img {
-        width: 550px;
-        height: 350px;
+        width: 510px;
+        height: 310px;
     }
     .main-circle {
-        width: 32rem;
-        height: 32rem;
-    }
-    .main-circle:hover {
         width: 37rem;
         height: 37rem;
+    }
+    .main-circle:hover {
+        width: 42rem;
+        height: 42rem;
     }
     .logo {
         font-size: 2rem;
@@ -4128,7 +4143,7 @@ li {
         /* position: fixed; */
     }
     .section-1 {
-        margin-bottom: -10rem;
+        margin-bottom: 0rem;
         height: 100vh;
     }
     .section-2 {
@@ -4136,7 +4151,7 @@ li {
     }
     .section-2 .main-btn {
         left: 50%;
-        margin-bottom: 15rem;
+        margin-bottom: 20rem;
         transform: translateX(-50%);
     }
     .section-3 {
@@ -4148,7 +4163,7 @@ li {
         margin-bottom: 113rem;
     }
     .about-me-text span {
-        font-size: 2.2rem;
+        font-size: 2.9rem;
         margin-top: 4.8rem;
     }
     .section-2 .main-btn {
@@ -4156,11 +4171,16 @@ li {
         bottom: -10rem;
         transform: translateX(-50%);
     }
+    .section-3 {
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+    }
     .section-4 {
         position: relative;
         padding: 20rem 10rem 10rem 12rem;
         width: 100%;
-        height: 160vh;
+        height: 100vh;
+        margin-top: 100rem;
         margin-bottom: 10rem;
     }
     .skill img {
