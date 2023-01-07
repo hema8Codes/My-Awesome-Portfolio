@@ -453,35 +453,28 @@ formInputs.forEach((input) => {
 const SlideShow = document.querySelector('.slideshow');
 
 setInterval(() => {
-
     const firstIcon = SlideShow.firstElementChild;
 
-    firstIcon.classList.add("faded-out");
+    firstIcon.classList.add('faded-out');
 
-    const SecondIcon = SlideShow.children[2];
-    const ThirdIcon = SlideShow.children[3];
-    const FourthIcon = SlideShow.children[4];
+    const SecondIcon = SlideShow.children[1];
+    const ThirdIcon = SlideShow.children[2];
 
-    SecondIcon.classList.add("light");
-    ThirdIcon.classList.add("light");
-    FourthIcon.classList.add("light");
+    SecondIcon.classList.add('light');
+    ThirdIcon.classList.add('light');
 
-    SecondIcon.previousElementSibling.classList.remove("light");
-    ThirdIcon.nextElementSibling.classList.add("light");
-    FourthIcon.nextElementSibling.classList.add("light");
-
-
+    SecondIcon.previousElementSibling.classList.remove('light');
+    ThirdIcon.nextElementSibling.classList.add('light');
 
     setTimeout(() => {
         SlideShow.removeChild(firstIcon);
 
         SlideShow.appendChild(firstIcon);
         setTimeout(() => {
-            firstIcon.classList.remove("faded-out")
-        }, 500)
-    }, 500)
-
-}, 3000);
+            firstIcon.classList.remove('faded-out');
+        }, 500);
+    }, 500);
+}, 2000);
 // End of SlideShow
 
 // End of Section 12
