@@ -499,11 +499,11 @@ html {
 }
 
 .featured-text-1 {
-    margin: 0 auto 0 10rem;
+    margin: 0 auto 0 15rem;
 }
 
 .featured-text-2 {
-    margin: 0 10rem 0 auto;
+    margin: 0 15rem 0 auto;
 }
 
 
@@ -545,7 +545,7 @@ html {
     font-weight: bold;
     color: rgb(255, 255, 255);
     letter-spacing: .01rem;
-    line-height: 1.4;
+    line-height: 1.3;
     text-shadow: 0 0 2rem #030518;
     position: relative;
     /* mix-blend-mode: color-dodge; */
@@ -597,7 +597,7 @@ html {
     padding: 10rem 0;
     margin-top: 5rem;
     position: relative;
-    margin-bottom: 60rem;
+    margin-bottom: 70rem;
 }
 
 
@@ -1273,9 +1273,9 @@ li.timeline-list-education.not-in-view div.div-education {
 
 .section-5 {
     position: relative;
-    height: 70vh;
-    margin-top: 30rem;
-    margin-bottom: 35rem;
+    height: 100vh;
+    margin-top: 60rem;
+    margin-bottom: 65rem;
     width: 100%;
 }
 
@@ -1293,7 +1293,7 @@ li.timeline-list-education.not-in-view div.div-education {
 .timeline-experience {
     top: 0vh;
     position: relative;
-    height: 70vh;
+    height: 140vh;
     padding-bottom: 20px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     color: #ddd;
@@ -1395,6 +1395,14 @@ p.timeline-experience-para {
     font-size: 18px;
 }
 
+.experience-logo-gtropy {
+    align-self: center;
+    width: 230px;
+    height: 80px;
+    background-color: rgba(255, 255, 255, 0.931);
+}
+
+
 .experience-logo-ncrb {
     align-self: center;
     width: 90px;
@@ -1416,6 +1424,11 @@ li.timeline-list-experience:nth-child(1) div.div-experience {
 li.timeline-list-experience:nth-child(2) div.div-experience {
     background: url(images/experience/work-experience-2.jpeg) center/cover;
 }
+
+li.timeline-list-experience:nth-child(3) div.div-experience {
+    background: url(images/experience/work-experience-3.jpg) center/cover;
+}
+
 
 li.timeline-list-experience::after {
     transition: background 0.5s ease-in-out;
@@ -2354,8 +2367,8 @@ li {
 .flip-box {
     background-color: transparent;
     width: 460px;
-    height: 330px;
-    margin: 2.5rem;
+    height: 320px;
+    margin: 1rem;
     justify-content: center;
     cursor: pointer;
     justify-content: center;
@@ -2695,11 +2708,11 @@ li {
         padding: 3rem 0rem 0rem 5rem;
     }
     .about-me-text span {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     .section-2 .main-btn {
         left: 50%;
-        bottom: -1rem;
+        bottom: -9rem;
         transform: translateX(-50%);
     }
     .section-3 {
@@ -2708,14 +2721,14 @@ li {
         padding: 5rem 0;
         margin-top: 0rem;
         position: relative;
-        margin-bottom: 70rem;
+        margin-bottom: 100rem;
     }
     .section-8 {
         width: 100%;
         height: 0%;
         padding: 0;
         position: relative;
-        margin-bottom: 20rem;
+        margin-bottom: 30rem;
     }
     .section-9 {
         margin-bottom: 5rem;
@@ -2787,7 +2800,7 @@ li {
         height: 9.2rem;
     }
     .about-me-text span {
-        font-size: 4rem;
+        font-size: 3rem;
     }
     /* Featured Text */
     .featured-text {
@@ -2812,22 +2825,22 @@ li {
     /* End of Featured Text */
     .section-1 .main-btn {
         left: 50%;
-        bottom: 2rem;
+        bottom: 4.5rem;
         transform: translateX(-50%);
     }
     .section-3 {
         width: 100%;
         height: 100%;
         padding: 10rem 0;
-        margin-top: 5rem;
+        margin-top: 7rem;
         position: relative;
-        margin-bottom: 80rem;
+        margin-bottom: 100rem;
     }
     .section-4 {
         position: relative;
-        padding: 20rem 15rem 10rem 20rem;
+        padding: 20rem 30rem 10rem 30rem;
         width: 100%;
-        height: 160vh;
+        height: 170vh;
     }
     .skill img {
         width: 100%;
@@ -2947,7 +2960,7 @@ li {
         /* flex-direction: row; */
     }
     .flip-box {
-        width: 380px;
+        width: 340px;
         height: 250px;
     }
     .achievement-text {
@@ -3005,7 +3018,7 @@ li {
         height: 9.2rem;
     }
     .about-me-text span {
-        font-size: 4rem;
+        font-size: 3.5rem;
     }
     /* Featured Text */
     .featured-text {
@@ -3030,7 +3043,7 @@ li {
     /* End of Featured Text */
     .section-1 .main-btn {
         left: 50%;
-        bottom: 2rem;
+        bottom: 1rem;
         transform: translateX(-50%);
     }
     .section-3 {
@@ -3039,7 +3052,7 @@ li {
         padding: 10rem 0;
         margin-top: 5rem;
         position: relative;
-        margin-bottom: 80rem;
+        margin-bottom: 100rem;
     }
     .section-4 {
         position: relative;
@@ -3269,7 +3282,7 @@ li {
         padding: 5rem 0;
         margin-top: 5rem;
         position: relative;
-        margin-bottom: 130rem;
+        margin-bottom: 120rem;
     }
     .section-4 {
         position: relative;
@@ -3437,7 +3450,7 @@ li {
         padding: 10rem 0;
         margin-top: 5rem;
         position: relative;
-        margin-bottom: 100rem;
+        margin-bottom: 150rem;
     }
     .project-img {
         padding: 7rem 11rem;
