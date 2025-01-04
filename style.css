@@ -14,9 +14,9 @@
     bottom: 3rem;
     width: 13rem;
     height: 13rem;
-    background-color: #3174f0;
+    background-color: #f0cd31;
     border-radius: 50%;
-    border: 0.2rem dotted #ffffff;
+    border: 0.2rem dotted #2b0f0f;
     border-width: 0.4rem;
     padding: 0.1rem;
     overflow: hidden;
@@ -25,7 +25,7 @@
 .main-btn-content {
     width: 100%;
     height: 100%;
-    border: 0.2rem dotted #091475;
+    border: 0.2rem dotted #3b4ad1;
     border-width: 0.3rem;
     border-radius: 50%;
     transform: rotate(40deg);
@@ -34,7 +34,7 @@
 
 .main-btn:hover .main-btn-content {
     transform: rotate(60deg);
-    border: 0.2rem dotted #e714ee;
+    border: 0.2rem dotted #34150c;
     border-width: 0.5rem;
     transition: transform 0.2s 0.5s, border 0.2s;
 }
@@ -44,7 +44,7 @@
     top: 4rem;
     width: 3rem;
     height: 0.5rem;
-    border: 0.1rem solid #ffffff;
+    border: 0.2rem solid #2d1010;
 }
 
 .main-btn-line:nth-child(1) {
@@ -67,7 +67,7 @@
 .main-btn span {
     position: absolute;
     bottom: 3rem;
-    color: #ffffff;
+    color: #320b0b;
     font-size: 1.1rem;
     font-weight: 600;
     text-transform: uppercase;
@@ -77,7 +77,7 @@
     position: absolute;
     width: 0;
     height: 0;
-    background-color: #00eaff;
+    background-color: #f0a146;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     animation: rippleAnim 0.5s forwards;
@@ -125,8 +125,8 @@ html {
 /* Section Heading */
 
 .section-heading {
-    font-size: 2.5rem;
-    font-weight: 700;
+    font-size: 2.8rem;
+    font-weight: 800;
     text-shadow: #0a5f24;
     color: #bffaff;
     text-transform: uppercase;
@@ -161,7 +161,7 @@ html {
 .mouse-circle {
     width: 6rem;
     height: 6rem;
-    border: .1rem solid #9bfce4;
+    border: .1rem solid #eec026;
     border-width: 0.5rem;
     animation: mouseCircleAnim 10s infinite linear;
 }
@@ -192,7 +192,7 @@ html {
 .mouse-dot {
     width: 0.5rem;
     height: 0.5rem;
-    background-color: #83f1ff;
+    background-color: #ec6d2e;
     animation: mouseDotAnim 10s infinite linear;
 }
 
@@ -221,7 +221,7 @@ html {
     position: fixed;
     width: 100%;
     height: 100vh;
-    background: linear-gradient(rgba(195, 221, 252, 0.146), rgba(45, 45, 191, 0.593)), url(images/bgblue2.jpg) center no-repeat;
+    background: linear-gradient(rgba(195, 221, 252, 0), rgba(45, 45, 191, 0)), url(images/BG_Black.jpg) center no-repeat;
     background-size: cover;
 }
 
@@ -237,7 +237,7 @@ html {
     right: 1rem;
     width: 8rem;
     height: 8rem;
-    background-color: #ffffff;
+    background-color: rgb(176, 38, 38);
     border-radius: 50%;
     z-index: 200;
     overflow: hidden;
@@ -256,23 +256,23 @@ html {
 }
 
 .half-circle:nth-child(1) {
-    background-color: rgb(16, 11, 63);
+    background-color: rgb(242, 242, 38);
 }
 
 .half-circle:nth-child(2) {
-    background-color: rgb(16, 11, 63);
+    background-color: rgb(242, 242, 38);
 }
 
 .half-circle-top {
-    background-color: rgb(255, 255, 255);
+    background-color: rgb(176, 38, 38);
 }
 
 .progress-bar-circle {
     width: 7.6rem;
     height: 7.6rem;
-    background-color: #616bf5;
+    background-color: #1f280e;
     border-radius: 50%;
-    color: #ffffff;
+    color: #efd343;
     font-size: 4rem;
     z-index: 200;
     transition: transform 0.5s;
@@ -407,10 +407,10 @@ html {
 }
 
 .circle {
-    width: 30rem;
-    height: 30rem;
+    width: 15rem;
+    height: 15rem;
     border-radius: 50%;
-    background-color: #3cc2f7;
+    background-color: #f7f13c;
     align-self: center;
     justify-self: center;
     opacity: 0.9;
@@ -420,12 +420,14 @@ html {
     transition: left 2s, top 2s;
 }
 
+
 .circle-1 {
     background: url(images/landing/computer.gif) center no-repeat;
     background-size: cover;
     background-clip: content-box;
     border: .8rem dotted #f3fbff;
-    margin-left: -10rem;
+    margin-left: 60rem;
+    margin-top: -5rem;
 }
 
 .circle-2 {
@@ -433,7 +435,8 @@ html {
     background-size: cover;
     background-clip: content-box;
     border: 0.7rem dashed #6eff19;
-    margin-right: -10rem;
+    margin-right: 60rem;
+    margin-top: -5rem;
 }
 
 .circle-3 {
@@ -441,7 +444,8 @@ html {
     background-size: cover;
     background-clip: content-box;
     border: 1rem double #faf60f;
-    margin-left: -10rem;
+    margin-left: 25rem;
+    margin-top: -50rem;
 }
 
 .circle-4 {
@@ -449,23 +453,44 @@ html {
     background-size: cover;
     background-clip: content-box;
     border: 1rem double #ee5eee;
-    margin-right: -10rem;
+    margin-right: 25rem;
+    margin-top: -50rem;
 }
 
+.circle-5 {
+    background: url(images/landing/research.gif) center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: .8rem dotted #f3fbff;
+    margin-left: 60rem;
+    margin-top: -45rem;
+}
+
+.circle-6 {
+    background: url(images/landing/researchCoder.gif) center no-repeat;
+    background-size: cover;
+    background-clip: content-box;
+    border: 0.7rem dashed #6eff19;
+    margin-right: 60rem;
+    margin-top: -45rem;
+}
+
+
+
 .main-circle {
-    width: 20rem;
-    height: 20rem;
+    width: 10rem;
+    height: 10rem;
     position: absolute;
     overflow: hidden;
     border-radius: 50%;
     background-clip: content-box;
-    border: 1.5rem double #00eaff;
+    border: 1.5rem double #f1b623;
     transition: width 0.2s, height 0.2s;
 }
 
 .main-circle:hover {
-    width: 37rem;
-    height: 37rem;
+    width: 20rem;
+    height: 20rem;
 }
 
 .main-circle img {
@@ -477,8 +502,8 @@ html {
 }
 
 .main-circle-img {
-    width: 455px;
-    height: 490px;
+    width: 300px;
+    height: 350px;
 }
 
 
@@ -546,7 +571,7 @@ html {
     color: rgb(255, 255, 255);
     letter-spacing: .01rem;
     line-height: 1.3;
-    text-shadow: 0 0 2rem #030518;
+    text-shadow: 0 0 2rem #f9d568;
     position: relative;
     /* mix-blend-mode: color-dodge; */
 }
@@ -594,10 +619,9 @@ html {
 .section-3 {
     width: 100%;
     height: 100%;
-    padding: 10rem 0;
-    margin-top: 5rem;
+    padding: 20rem 20rem;
     position: relative;
-    margin-bottom: 70rem;
+   
 }
 
 
@@ -617,7 +641,7 @@ html {
     height: 70vh;
     padding-bottom: 10px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #ddd;
+    color: #f2e55b;
 }
 
 ul.timeline-frame-education {
@@ -630,8 +654,8 @@ li.timeline-list-education {
     width: 7px;
     margin: 0 auto;
     padding-top: 6px;
-    background: rgb(39, 230, 255);
-    box-shadow: 5px 5px 10px 10px rgb(149, 234, 255);
+    background: rgb(236, 218, 19);
+    box-shadow: 5px 5px 10px 10px rgb(244, 224, 45);
 }
 
 li.timeline-list-education::after {
@@ -642,11 +666,11 @@ li.timeline-list-education::after {
     transform: translateX(-50%);
     width: 70px;
     height: 70px;
-    background: url(images/education/education_img.png) center no-repeat rgb(156, 252, 255);
+    background: url(images/education/education_img.png) center no-repeat rgb(240, 203, 42);
     background-size: cover;
     background-clip: content-box;
     border: 0.4rem dotted #020b8d;
-    box-shadow: 0px 3px 8px 8px rgb(149, 234, 255);
+    box-shadow: 0px 3px 8px 8px rgb(237, 189, 43);
     border-radius: 50%;
 }
 
@@ -657,7 +681,7 @@ li.timeline-list-education div.div-education {
     width: 355px;
     padding: 1rem;
     border-radius: 5px;
-    box-shadow: 1px 3px 20px 20px rgb(63, 239, 255);
+    box-shadow: 1px 3px 20px 20px rgb(255, 252, 63);
 }
 
 li.timeline-list-education div.div-education::before {
@@ -714,6 +738,12 @@ p.timeline-education-para {
     font-size: medium;
     font-size: 18px;
 }
+.education-logo-asu {
+    align-self: center;
+    width: 90px;
+    height: 80px;
+    background-color: rgba(226, 226, 226, 0.719);
+}
 
 .education-logo-ggsipu {
     align-self: center;
@@ -730,14 +760,18 @@ p.timeline-education-para {
 }
 
 li.timeline-list-education:nth-child(1) div.div-education {
-    background: url(images/education/ggsipu.jpeg) center/cover;
+    background: url(images/education/ASU.jpg) center/cover;
 }
 
 li.timeline-list-education:nth-child(2) div.div-education {
-    background: url(images/education/fas_school.jpeg) center/cover;
+    background: url(images/education/ggsipu.jpeg) center/cover;
 }
 
 li.timeline-list-education:nth-child(3) div.div-education {
+    background: url(images/education/fas_school.jpeg) center/cover;
+}
+
+li.timeline-list-education:nth-child(4) div.div-education {
     background: url(images/education/fas_school.jpeg) center/cover;
 }
 
@@ -1065,6 +1099,12 @@ li.timeline-list-education.not-in-view div.div-education {
         line-height: 1.1;
         font-size: small;
     }
+    .education-logo-asu {
+        align-self: center;
+        width: 80px;
+        height: 70px;
+        background-color: rgba(226, 226, 226, 0.719);
+    }
     .education-logo-ggsipu {
         align-self: center;
         width: 80px;
@@ -1158,6 +1198,12 @@ li.timeline-list-education.not-in-view div.div-education {
         line-height: 1.1;
         font-size: small;
     }
+    .education-logo-asu {
+        align-self: center;
+        width: 70px;
+        height: 60px;
+        background-color: rgba(226, 226, 226, 0.719);
+    }
     .education-logo-ggsipu {
         align-self: center;
         width: 70px;
@@ -1183,7 +1229,7 @@ li.timeline-list-education.not-in-view div.div-education {
 
 .section-4 {
     position: relative;
-    padding: 10rem 15rem 10rem 20rem;
+    padding: 50rem 15rem 50rem 20rem;
     width: 100%;
     height: 100vh;
 }
@@ -1198,15 +1244,15 @@ li.timeline-list-education.not-in-view div.div-education {
     left: 18px;
     border: 0.4rem dotted #e8e8f0;
     background-clip: content-box;
-    box-shadow: 2px 3px 10px 10px rgb(149, 234, 255);
-    background-color: #002eac;
+    box-shadow: 2px 3px 10px 10px rgb(21, 34, 38);
+    background-color: #e6e3c9bf;
 }
 
 .specific-skill-heading {
     font-size: 2rem;
     font-weight: 600;
-    text-shadow: #0a5f24;
-    color: #bffaff;
+    text-shadow: #308b4b;
+    color: #d7b414;
     /* text-transform: uppercase; */
     font-family: "Stick No Bills", sans-serif;
     position: absolute;
@@ -1235,7 +1281,7 @@ li.timeline-list-education.not-in-view div.div-education {
 }
 
 .skill-text {
-    color: #00eaff;
+    color: #06191c;
     left: 10rem;
     margin-top: auto;
     font-weight: 730;
@@ -1274,7 +1320,7 @@ li.timeline-list-education.not-in-view div.div-education {
 .section-5 {
     position: relative;
     height: 100vh;
-    margin-top: 60rem;
+    margin-top: 0rem;
     margin-bottom: 65rem;
     width: 100%;
 }
@@ -2283,7 +2329,7 @@ li.timeline-list-experience.not-in-view div.div-experience {
 
 h2.box-heading {
     /* background-color: rgba(255, 255, 255, 0.705); */
-    color: rgb(134, 237, 255);
+    color: rgb(4, 29, 34);
     text-shadow: rgb(29, 215, 240);
     text-align: justify;
     padding: 0.2rem;
@@ -2560,15 +2606,15 @@ li {
 
 /* Section 12 */
 
-.section-12 {
+/* .section-12 {
     position: relative;
     width: 100%;
     height: 100vh;
     /* padding: 15rem 10rem 4rem 10rem; */
-    margin-top: 0rem;
+    /* margin-top: 0rem; */
     /* margin-bottom: 15rem; */
-    flex-direction: column;
-}
+    /* flex-direction: column; */
+/* } */ 
 
 
 /* Form */
@@ -2697,12 +2743,12 @@ li {
         height: 15rem;
     }
     .main-circle {
-        width: 45rem;
-        height: 45rem;
+        width: 30rem;
+        height: 30rem;
     }
     .main-circle:hover {
-        width: 50rem;
-        height: 50rem;
+        width: 33rem;
+        height: 33rem;
     }
     .section-2 {
         padding: 3rem 0rem 0rem 5rem;
@@ -2721,14 +2767,13 @@ li {
         padding: 5rem 0;
         margin-top: 0rem;
         position: relative;
-        margin-bottom: 100rem;
+        margin-bottom: 130rem;
     }
     .section-8 {
         width: 100%;
         height: 0%;
-        padding: 0;
         position: relative;
-        margin-bottom: 30rem;
+        margin-top: 30rem;
     }
     .section-9 {
         margin-bottom: 5rem;
@@ -2782,12 +2827,12 @@ li {
         transition: opacity 0.5s, visibility 0.5s, transform 0.5s;
     }
     .main-circle {
-        width: 45rem;
-        height: 45rem;
+        width: 30rem;
+        height: 30rem;
     }
     .main-circle:hover {
-        width: 55rem;
-        height: 55rem;
+        width: 40rem;
+        height: 40rem;
     }
     .progress-bar {
         right: -1rem;
@@ -2825,16 +2870,22 @@ li {
     /* End of Featured Text */
     .section-1 .main-btn {
         left: 50%;
-        bottom: 4.5rem;
+        bottom: 2rem;
         transform: translateX(-50%);
     }
     .section-3 {
+        height: 100vh;
         width: 100%;
-        height: 100%;
-        padding: 10rem 0;
-        margin-top: 7rem;
         position: relative;
-        margin-bottom: 100rem;
+        margin-bottom: 130rem;
+    }
+
+    .section-5 {
+        position: relative;
+        height: 100vh;
+        margin-top: 60rem;
+        margin-bottom: 65rem;
+        width: 100%;
     }
     .section-4 {
         position: relative;
@@ -2861,7 +2912,7 @@ li {
         font-size: 2.4rem;
         font-weight: 800;
         text-shadow: #0a5f24;
-        color: #95f140;
+        color: #171c07;
         /* text-transform: uppercase; */
         font-family: "Stick No Bills", sans-serif;
         position: absolute;
@@ -2908,14 +2959,14 @@ li {
     .section-5 {
         position: relative;
         height: 100vh;
-        margin-top: 20rem;
-        margin-bottom: 40rem;
+        margin-top: 0rem;
+        margin-bottom: 50rem;
         width: 100%;
     }
     .section-9 {
         width: 100%;
         position: relative;
-        /* margin-bottom: 20rem; */
+        margin-bottom: 20rem; 
         margin-top: 35rem;
         padding: 5rem;
     }
@@ -2953,11 +3004,11 @@ li {
     .section-13 {
         width: 100%;
         height: 100vh;
-        /* padding: 10rem 10rem 10rem 10rem; */
+        padding: 15rem 15rem 15rem 15rem; 
         position: relative;
         margin-bottom: 20rem;
         margin-top: 50rem;
-        /* flex-direction: row; */
+        flex-direction: row; 
     }
     .flip-box {
         width: 340px;
@@ -2969,14 +3020,14 @@ li {
     .slideshow {
         margin: 5rem 0;
     }
-    .section-12 {
+    /* .section-12 {
         position: relative;
         height: 100vh;
         /* padding: 15rem 10rem 4rem 10rem; */
         /* margin-top: 0rem; */
         /* margin-bottom: 0rem; */
-        flex-direction: column;
-    }
+        /* flex-direction: column; */
+    /* } */ 
 }
 
 @media (max-width: 1500px) {
@@ -3205,12 +3256,12 @@ li {
         display: none;
     }
     .main-circle {
-        width: 45rem;
-        height: 45rem;
+        width: 40rem;
+        height: 40rem;
     }
     .main-circle:hover {
-        width: 47rem;
-        height: 47rem;
+        width: 45rem;
+        height: 45rem;
     }
     .navbar {
         position: relative center;
@@ -3356,7 +3407,7 @@ li {
     .section-13 {
         width: 100%;
         height: 100vh;
-        padding: 10rem 10rem 10rem 10rem;
+        padding: 15rem 15rem 15rem 15rem;
         position: relative;
         margin-bottom: 20rem;
         margin-top: 80rem;
@@ -3407,12 +3458,12 @@ li {
         display: none;
     }
     .main-circle {
-        width: 40rem;
-        height: 40rem;
+        width: 30rem;
+        height: 30rem;
     }
     .main-circle:hover {
-        width: 45rem;
-        height: 45rem;
+        width: 42rem;
+        height: 42rem;
     }
     .navbar {
         position: relative center;
@@ -3529,14 +3580,14 @@ li {
         padding: 10rem 0;
         margin-top: 5rem;
         position: relative;
-        margin-bottom: 90rem;
+        margin-bottom: 130rem;
     }
     .section-4 {
         position: relative;
         padding: 20rem 5rem 10rem 12rem;
         width: 100%;
         height: 150vh;
-        margin-bottom: 10rem;
+        margin-bottom: 50rem;
     }
     .skill img {
         width: 100%;
@@ -3786,14 +3837,14 @@ li {
         padding: 10rem 0;
         margin-top: 5rem;
         position: relative;
-        margin-bottom: 90rem;
+        margin-bottom: 160rem;
     }
     .section-8 {
         width: 100%;
         height: 100%;
         padding: 10rem 0;
         position: relative;
-        margin-bottom: 50rem;
+        margin-bottom: 130rem;
     }
     #project-links {
         display: inline;
@@ -3906,6 +3957,7 @@ li {
         height: 100%;
         padding: 0;
         position: relative;
+        margin-top: 50rem;
         margin-bottom: 20rem;
     }
     .service-btn {
@@ -4112,12 +4164,12 @@ li {
         height: 310px;
     }
     .main-circle {
-        width: 37rem;
-        height: 37rem;
+        width: 25rem;
+        height: 25rem;
     }
     .main-circle:hover {
-        width: 42rem;
-        height: 42rem;
+        width: 30rem;
+        height: 30rem;
     }
     .logo {
         font-size: 2rem;

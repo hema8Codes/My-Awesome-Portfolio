@@ -235,7 +235,7 @@ projects.forEach((project, i) => {
         bigImg.className = "project-img";
         const imgPath = project.firstElementChild.getAttribute("src").split(".")[0];
         // console.log(imgPath);
-        bigImg.setAttribute("src", `${imgPath}-big.jpg`);
+        bigImg.setAttribute("src", `${imgPath}-big.png`);
         bigImgWrapper.appendChild(bigImg);
         document.body.style.overflowY = "hidden";
 
