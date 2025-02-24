@@ -1252,7 +1252,7 @@ li.timeline-list-education.not-in-view div.div-education {
     font-size: 2rem;
     font-weight: 600;
     text-shadow: #308b4b;
-    color: #d7b414;
+    color: #7c0404;
     /* text-transform: uppercase; */
     font-family: "Stick No Bills", sans-serif;
     position: absolute;
@@ -2329,7 +2329,7 @@ li.timeline-list-experience.not-in-view div.div-experience {
 
 h2.box-heading {
     /* background-color: rgba(255, 255, 255, 0.705); */
-    color: rgb(4, 29, 34);
+    color: rgb(138, 223, 240);
     text-shadow: rgb(29, 215, 240);
     text-align: justify;
     padding: 0.2rem;
